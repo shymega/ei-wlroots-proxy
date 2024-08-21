@@ -14,6 +14,6 @@ reis = { version = "0.2.0", features = ["tokio"] }
 thiserror = "1.0.63"
 tokio = { version = "1.39.3", features = ["fs", "process", "rt", "rt-multi-thread"] }
 wayland-client = "0.31.1"
-wayland-protocols = { version = "0.31.0", features = ["client", "unstable"] }
+wayland-protocols = { version = "0.32.3", features = ["client", "unstable"] }
 wayland-protocols-misc = { version = "0.3.3", features = ["client"] }
-wayland-protocols-wlr = { version = "0.2.0", features = ["client"] }
+wayland-protocols-wlr = { version = "0.3.3", features = ["client"] }
