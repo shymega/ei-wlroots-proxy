@@ -9,6 +9,7 @@
 , pkg-config
 , wayland-protocols
 , wayland
+, stdenv
 }:
 let
   pname = "ei-wlroots-proxy";
@@ -27,6 +28,7 @@ rustPlatform.buildRustPackage {
 
   buildInputs = [
     rustPlatform.bindgenHook
+  ] ++ lib.optional stdenv.isLinux [
     wayland
     wayland-protocols
   ];

@@ -26,29 +26,9 @@
       {
         packages.ei-wlroots-proxy = pkgs.callPackage ./build-aux/nix { };
         packages.default = self.outputs.packages.${system}.ei-wlroots-proxy;
-        devShells.default = pkgs.buildFHSUserEnv {
+        devShells.default = pkgs.mkShell {
           name = "ei-wlroots-proxy-dev";
-          targetPkgs = pkgs: with pkgs; [
-            bun
-            cabextract
-            cairo
-            cargo
-            cargo-tauri
-            clippy
-            cmake
-            gcc
-            git
-            glibc
-            gtk3
-            openssl
-            pkg-config
-            python3Packages.aiohttp
-            python3Packages.pipx
-            python3Packages.toml
-            rustc
-            rustfmt
-            rustup
-          ] ++ [ self.packages.${system}.ei-wlroots-proxy ];
+          inputsFrom = [ self.packages.${system}.ei-wlroots-proxy ];
         };
       }) // {
       overlays.default = final: prev: {
