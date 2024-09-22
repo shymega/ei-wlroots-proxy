@@ -15,7 +15,7 @@
     devenv.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = { self, ... } @ inputs:
-    inputs.flake-utils.lib.eachDefaultSystem
+    inputs.flake-utils.lib.eachSystem ["aarch64-linux" "x86_64-linux"]
       (system:
         let
           pkgs = inputs.nixpkgs.outputs.legacyPackages.${system};
