@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4.1.7
       - uses: cachix/install-nix-action@V27
       - name: Check Nix Flake
-        run: nix flake check --print-build-logs --all-systems
+        run: nix flake check --print-build-logs --all-systems --impure
 
   check-nix-build:
     runs-on: ubuntu-latest
@@ -24,4 +24,4 @@ jobs:
       - uses: actions/checkout@v4.1.7
       - uses: cachix/install-nix-action@V27
       - name: Build package
-        run: nix build --print-build-logs 
+        run: nix build --print-build-logs --impure
