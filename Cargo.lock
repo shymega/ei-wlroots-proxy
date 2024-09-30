@@ -426,6 +426,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "once_cell"
+version = "1.20.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "82881c4be219ab5faaf2ad5e5e5ecdff8c66bd7402ca3160975c93b24961afd1"
+dependencies = [
+ "portable-atomic",
+]
+
+[[package]]
 name = "owo-colors"
 version = "4.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -448,6 +457,12 @@ name = "pkg-config"
 version = "0.3.30"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d231b230927b5e4ad203db57bbcbee2802f6bce620b1e4a9024a07d94e2907ec"
+
+[[package]]
+name = "portable-atomic"
+version = "1.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cc9c68a3f6da06753e9335d63e27f6b9754dd1920d941135b7ea8224f141adb2"
 
 [[package]]
 name = "proc-macro2"
@@ -478,11 +493,12 @@ dependencies = [
 
 [[package]]
 name = "reis"
-version = "0.2.0"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "635de3608f72e8d067f8972f9401619ac7a3f34a0a17340fa0e3f9db57e067a3"
+checksum = "78bc2016a9d2ea56c54d89a3b043e71e37f025efa8f5c59e61219158daec48b4"
 dependencies = [
  "futures",
+ "once_cell",
  "rustix",
  "tokio",
 ]
