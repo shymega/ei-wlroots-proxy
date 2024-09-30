@@ -13,15 +13,15 @@ jobs:
   check-flake:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
-      - uses: cachix/install-nix-action@V28
+      - uses: actions/checkout@v4.2.0
+      - uses: cachix/install-nix-action@v29
       - name: Check Nix Flake
         run: nix flake check --print-build-logs --all-systems --impure
 
   check-nix-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
-      - uses: cachix/install-nix-action@V28
+      - uses: actions/checkout@v4.2.0
+      - uses: cachix/install-nix-action@v29
       - name: Build package
         run: nix build --print-build-logs --impure
