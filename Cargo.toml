@@ -10,7 +10,7 @@ edition = "2021"
 [dependencies]
 clap = { version = "4.5.18", features = ["env", "derive", "unicode", "string"] }
 miette = { version = "7.2.0", features = ["fancy"] }
-reis = { version = "0.2.0", features = ["tokio"] }
+reis = { version = "0.3.0", features = ["tokio"] }
 thiserror = "1.0.64"
 tokio = { version = "1.40.0", features = ["fs", "process", "rt", "rt-multi-thread"] }
 wayland-client = "0.31.6"
