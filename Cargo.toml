@@ -11,9 +11,9 @@ edition = "2021"
 clap = { version = "4.5.20", features = ["env", "derive", "unicode", "string"] }
 miette = { version = "7.2.0", features = ["fancy"] }
 reis = { version = "0.3.0", features = ["tokio"] }
-thiserror = "1.0.64"
-tokio = { version = "1.40.0", features = ["fs", "process", "rt", "rt-multi-thread"] }
-wayland-client = "0.31.6"
-wayland-protocols = { version = "0.32.4", features = ["client", "unstable"] }
-wayland-protocols-misc = { version = "0.3.4", features = ["client"] }
-wayland-protocols-wlr = { version = "0.3.4", features = ["client"] }
+thiserror = "1.0.65"
+tokio = { version = "1.41.0", features = ["fs", "process", "rt", "rt-multi-thread"] }
+wayland-client = "0.31.7"
+wayland-protocols = { version = "0.32.5", features = ["client", "unstable"] }
+wayland-protocols-misc = { version = "0.3.5", features = ["client"] }
+wayland-protocols-wlr = { version = "0.3.5", features = ["client"] }
