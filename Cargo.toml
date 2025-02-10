@@ -8,7 +8,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-clap = { version = "4.5.27", features = ["env", "derive", "unicode", "string"] }
+clap = { version = "4.5.28", features = ["env", "derive", "unicode", "string"] }
 miette = { version = "7.5.0", features = ["fancy"] }
 reis = { version = "0.4.0", features = ["tokio"] }
 thiserror = "2.0.11"
