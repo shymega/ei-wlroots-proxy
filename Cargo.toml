@@ -13,7 +13,7 @@ clap = { version = "4.5.38", features = ["env", "derive", "unicode", "string"] }
 miette = { version = "7.6.0", features = ["fancy"] }
 reis = { version = "0.5.0", features = ["tokio"] }
 thiserror = "2.0.12"
-tokio = { version = "1.45.0", features = ["fs", "process", "rt", "rt-multi-thread"] }
+tokio = { version = "1.45.1", features = ["fs", "process", "rt", "rt-multi-thread"] }
 wayland-client = "0.31.10"
 wayland-protocols = { version = "0.32.8", features = ["client", "unstable"] }
 wayland-protocols-misc = { version = "0.3.8", features = ["client"] }
