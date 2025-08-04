@@ -9,12 +9,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-clap = { version = "4.5.41", features = ["env", "derive", "unicode", "string"] }
+clap = { version = "4.5.42", features = ["env", "derive", "unicode", "string"] }
 miette = { version = "7.6.0", features = ["fancy"] }
 reis = { version = "0.5.0", features = ["tokio"] }
 thiserror = "2.0.12"
-tokio = { version = "1.47.0", features = ["fs", "process", "rt", "rt-multi-thread"] }
-wayland-client = "0.31.10"
-wayland-protocols = { version = "0.32.8", features = ["client", "unstable"] }
-wayland-protocols-misc = { version = "0.3.8", features = ["client"] }
-wayland-protocols-wlr = { version = "0.3.8", features = ["client"] }
+tokio = { version = "1.47.1", features = ["fs", "process", "rt", "rt-multi-thread"] }
+wayland-client = "0.31.11"
+wayland-protocols = { version = "0.32.9", features = ["client", "unstable"] }
+wayland-protocols-misc = { version = "0.3.9", features = ["client"] }
+wayland-protocols-wlr = { version = "0.3.9", features = ["client"] }
